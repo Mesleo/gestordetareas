@@ -1,0 +1,307 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ *
+ * color principal: #3b7aa8 (azul mate)
+ * color secundario: #a6963a (amarillo caca)
+ * color terciario: #a63a59 (rosa oscuro)
+ */
+
+html {
+    font-family: "MT Extra"; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    background-image: url("../media/imagenes/fondo.jpg");
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 15px 10px 12px #fdd;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+details,
+figcaption,
+figure,
+footer,
+header,
+#contenido,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+aside, main {
+    display: inline-flex;
+}
+
+aside {
+    width: 25%;
+    display: inline-block;
+    min-height: 750px;
+    vertical-align: top;
+    padding: 20px;
+    color: rgba(251, 251, 255, 1);
+    border-right: 2px ridge #b9bbbe;
+    border-left: 2px ridge #b9bbbe;
+    background: #00ADB0;
+}
+
+aside article {
+    margin-top: 25px;
+    font-size: 14px;
+    transition: 1.3s;
+}
+
+aside article ul {
+    list-style: none;
+}
+
+aside article ul li a {
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+
+    text-decoration: none;
+}
+
+main {
+    width: 75%;
+    padding: 10px;
+    background: #a2eeff;
+    border-right: 3px ridge #b9bbbe;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress {
+
+}
+
+#contenido {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px ridge #b9bbbe;
+}
+
+#formulario_tarea {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background: linear-gradient(135deg, #56fdff, #4407ff);
+    border: 2px outset #010101;
+    /*border-radius: 20px;*/
+    box-shadow: 12px 10px 11px;
+    padding: 30px;
+}
+
+#formulario_tarea #etiquetas {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+#formulario_tarea #campos {
+    width: 60%;
+    display: inline-block;
+    padding-left: 0px;
+}
+
+#formulario_tarea label, #formulario_tarea input, #formulario_tarea select, #formulario_tarea textarea {
+    display: block;
+    width: 80%;
+    outline: none;
+    max-width: 100%;
+    max-height: 300px;
+    margin-bottom: 15%;
+}
+
+#formulario_tarea input[type=text], #formulario_tarea select, #formulario_tarea input[type=date], #formulario_tarea textarea {
+    width: 80%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#formulario_tarea input[type=text][required]:invalid, #form_login input[type=date][required]:invalid , #formulario_tarea textarea[required]:invalid{
+    box-shadow: 4px 3px 4px rgba(177, 0, 9, 0.74);
+}
+
+#social h3 {
+    text-align: center;
+}
+
+body > header {
+    width: 100%;
+    height: 150px;
+    margin-top: 0px;
+    background-color: #00ADB0;
+    border: 2px ridge #b9bbbe;
+}
+
+#calendario{
+    width: 90%;
+    margin: 0 auto;
+    border: 3px double rgb(27, 8, 34);
+    min-height: 220px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #4407ff, #56fdff);
+    transition: 0.9s;
+}
+
+#calendario:hover{
+    transform: scale(1.25,1.25);
+}
+
+#calendario #no_festivo{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+#calendario #festivo{
+    text-decoration: none;
+    color: rgba(192, 0, 7, 0.89);
+}
+
+#calendario td{
+    padding: 8px;
+    border: 1px solid rgb(246, 250, 255);
+    text-align: center;
+}
+
+main section {
+    width: 80%;
+    margin: 2%;
+}
+
+main section article {
+    width: 95%;
+    order: 0;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav {
+    display: block;
+    width: 100%;
+    border-left: 2px ridge #b9bbbe;
+    border-right: 2px ridge #b9bbbe;
+    border-bottom: 2px ridge #b9bbbe;
+    background-color: #ffffff;
+}
+
+nav > ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px 1px 10px 1px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    color: #212121;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #6572b5;
+    *background: linear-gradient(#27beff, #1c25ff);
+    color: rgba(212, 202, 0, 1);
+    border-radius: 10px;
+}
+
+nav > a:active {
+    background-color: rgba(199, 174, 37, 0.7);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    padding-top: 2%;
+    background-color: #00ADB0;
+    border-bottom: 2px ridge #b9bbbe;
+    border-right: 2px ridge #b9bbbe;
+    border-left: 2px ridge #b9bbbe;
+    color: rgba(251, 251, 255, 0.94);
+    font-size: 12px;
+}
+
+footer #personal {
+    width: 50%;
+    display: inline-block;
+    text-align: justify;
+    font-size: 15px;
+}
+
+footer #logo {
+    margin-left: 35%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#micanvas {
+    width: 130px;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 4.5em;
+    display: block;
+    width: 60%;
+    margin: auto;
+    color: #fff;
+    margin-top: 35px;
+    text-shadow: 8px 6px 6px rgba(63, 31, 115, 1);
+}
+
+#titulo_tarea{
+    font-size: 2.5em;
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javier Benítez</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <script src="js/javascript1.js" type="text/javascript"></script>
+</head>
+<body>
+    <header><h1>Gestor de tareas</h1>
+    </header>
+    <nav id="menu_contenedor">
+        <ul id="menu">
+            <li><a href="#">Desarrollo web cliente</a></li>
+            <li><a href="#">Desarrollo web servidor</a></li>
+            <li><a href="#">Diseño web</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">Aplicaciones web</a></li>
+        </ul>
+    </nav>
+    <div id="contenido">
+        <aside>
+            <h2>Tarea</h2>
+            <section>
+                <article>
+                    <ul>
+                        <li><a href="#">Nueva tarea</a></li>
+                        <li><a href="#">Ver tareas pendietes</a></li>
+                        <li><a href="#">Ver todas las tareas</a></li>
+                    </ul>
+                </article>
+            </section>
+            <h2>Últimas tareas</h2>
+            <section>
+                <article>
+                    <ul>
+                        <li><a href="#">Tarea 1...</a></li>
+                        <li><a href="#">Tarea 2...</a></li>
+                        <li><a href="#">Tarea 3...</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Calendario</h2>
+                    <div id="div_calendario"></div>
+                </article>
+            </section>
+        </aside>
+        <main>
+            <section>
+                <article>
+                    <h2 id="titulo_tarea">Tarea</h2>
+                    <form id="formulario_tarea" action="#">
+                        <div id="etiquetas">
+                            <label >Nombre: </label>
+                            <label >Módulo: </label>
+                            <label >Fecha de entrega: </label>
+                            <label >Descripción: </label>
+                        </div>
+                        <div id="campos">
+                            <input name="nombre" type="text" placeholder="Servicio DNS..." required>
+
+                            <select name="modulo" id="modulo">
+                                <option value="">Desarrollo web entorno cliente</option>
+                                <option value="">Desarrollo web entorno servidor</option>
+                                <option value="">Diseño de interfaces web</option>
+                                <option value="" selected>Programación Android</option>
+                                <option value="">Desplieque de aplicaciones web</option>
+                            </select>
+                            <input name="fecha" type="date" placeholder="10/12/2015" required>
+                            <textarea name="area" cols="30" rows="10" placeholder="Entrega la tarea..." required></textarea>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </div>
+    <noscript>Esta página requiere JavaScript, por favor actívelo</noscript>
+    <script src="js/canvas.js" type="text/javascript"></script>
+    <footer>
+        <div id="logo">
+            <canvas id="micanvas"></canvas>
+        </div>
+        <div id="personal">Copyright 2016 Javier Benítez del Pozo</div>
+    </footer>
+</body>
+</html>
